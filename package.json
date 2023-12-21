@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir output --no-source-maps"
+  },
+  "devDependencies": {
+    "@parcel/transformer-vue": "^2.10.3",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6",
+    "vue": "^3.2.47"
+  }
+}
