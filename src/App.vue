@@ -6,12 +6,14 @@
         <span class="pl-3 font-bold">{{ _t('GenCloud') }}</span>
       </h1>
 
-      <h2 class="text-2xl tracking-[-5px] text-blue-700 font-bold">{{ _t('B2B') }}</h2>
+      <h2>
+        <img src="./images/b2b-logo.jpg" class="w-auto h-full max-h-7" />
+      </h2>
     </div>
   </header>
 
   <main class="relative z-0">
-    <div class="grid grid-cols-1 md:grid-cols-2 sm:gap-4 welcome bg-cover bg-no-repeat bg-fixed bg-center bg-gradient-to-r from-green-100 to-blue-200">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 welcome bg-cover bg-no-repeat bg-scroll bg-center bg-gradient-to-r from-green-100 to-blue-200">
       <div class="w-full h-full flex items-center justify-center mt-3 md:mt-auto">
         <div class="max-w-[90%] md:max-w-full">
           <h3 class="text-3xl lg:text-6xl font-bold mb-3 text-blue-700">
@@ -32,7 +34,7 @@
       </div>
 
       <div class="py-8 xl:pr-72 lg:pr-40 md:pr-24 text-center">
-        <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto w-[360px] max-w-[90%] sm:max-w-[360px]" />
+        <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
       </div>
     </div>
   </main>
