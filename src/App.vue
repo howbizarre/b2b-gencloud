@@ -51,23 +51,27 @@ function scrollToElm(elm) {
       </div>
 
       <div class="py-8 xl:pr-72 lg:pr-40 md:pr-24 text-center">
-        <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+        <img src="./images/login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
       </div>
     </div>
 
-    <Splide ref="inTheBegining" :options="{ dragMinThreshold: 10, type: 'loop', arrows: false, pagination: false }" aria-label="My Favorite Images">
-      <SplideSlide class="bg-slate-400">
-        <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
-      </SplideSlide>
-      <SplideSlide class="bg-slate-500">
-        <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
-      </SplideSlide>
-    </Splide>
+    <section class="p-10">
+      <Splide ref="inTheBegining"
+              :options="{ dragMinThreshold: 10, type: 'loop', arrows: false, pagination: false, gap: 10 }"
+              aria-label="This is Bizzio"
+              class="rounded-xl">
+        <SplideSlide class="rounded-xl bg-slate-300 flex items-center py-10">
+          <img src="./images/gencloud_logo_text.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+        </SplideSlide>
+
+        <SplideSlide class="rounded-xl bg-slate-500 flex items-center py-10">
+          <img src="./images/gencloud_logo_text.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+        </SplideSlide>
+      </Splide>
+    </section>
   </main>
 </template>
 
 <style>
-.welcome {
-  background-image: url('./images/top-section-bg.jpg');
-}
+.welcome { background-image: url('./images/top-section-bg.jpg'); }
 </style>
