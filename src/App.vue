@@ -3,13 +3,9 @@ import { ref } from 'vue';
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import * as styles from '@splidejs/vue-splide/dist/css/splide-core.min.css';
 
-const _t = t => t;
-const inTheBegining = ref();
-
-function scrollToElm(elm) {
-  const element = elm.$el;
-  window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
-}
+const _t = (t) => t;
+const inTheBegining = ref(null);
+const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior: 'smooth' });
 </script>
 
 <template>
