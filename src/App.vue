@@ -1,3 +1,17 @@
+<script setup>
+import { ref } from 'vue';
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/vue-splide/dist/css/splide-core.min.css';
+
+const _t = t => t;
+const splideRef = ref();
+
+function scrollToElm(elm) {
+  const element = elm.$el;
+  window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
+}
+</script>
+
 <template>
   <header class="w-full h-14 flex items-center shadow-lg relative z-50">
     <div class="container mx-auto px-5 sm:px-0 flex items-center justify-between">
@@ -21,13 +35,13 @@
             {{ _t('от GenCloud') }}
           </h3>
 
-          <p class="md:text-lg">Пазарувайте онлайн - готино е!</p>
-          <p class="md:text-lg">Под ръка е в джоба, и на бюрото, и в колата, и...</p>
-          <p class="md:text-lg">Много е лесно, бързо и ефективно.</p>
+          <p class="md:text-lg">{{ _t('Пазарувайте онлайн - готино е!') }}</p>
+          <p class="md:text-lg">{{ _t('Под ръка е в джоба, и на бюрото, и в колата, и...') }}</p>
+          <p class="md:text-lg">{{ _t('Много е лесно, бързо и ефективно.') }}</p>
 
           <div class="mt-3 md:mt-10">
-            <button class="bg-blue-700 hover:bg-blue-500 transition-colors text-white font-medium uppercase py-2 px-4 rounded-md">
-              {{ _t('Стартирай') }}
+            <button @click="scrollToElm(splideRef)" class="bg-blue-700 hover:bg-blue-500 transition-colors text-white font-medium uppercase py-2 px-4 rounded-md">
+              {{ _t('Разгледай') }}
             </button>
           </div>
         </div>
@@ -37,12 +51,17 @@
         <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
       </div>
     </div>
+
+    <Splide ref="splideRef" :options="{ dragMinThreshold: 10, type: 'loop', arrows: false, pagination: false }" aria-label="My Favorite Images">
+      <SplideSlide class="bg-slate-400">
+        <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+      </SplideSlide>
+      <SplideSlide class="bg-slate-500">
+        <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+      </SplideSlide>
+    </Splide>
   </main>
 </template>
-
-<script setup>
-const _t = t => t;
-</script>
 
 <style>
 .welcome {
