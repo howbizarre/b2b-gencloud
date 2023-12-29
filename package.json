@@ -13,5 +13,9 @@
   },
   "dependencies": {
     "@splidejs/vue-splide": "^0.6.12"
-  }
+  },
+  "alias": {
+    "vue": "vue/dist/vue.esm-browser.js"
+  },
+  "type": "module"
 }

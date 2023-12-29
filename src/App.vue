@@ -32,7 +32,7 @@ const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior:
           </h3>
 
           <p class="md:text-lg">{{ _t('Пазарувайте онлайн - готино е!') }}</p>
-          <p class="md:text-lg">{{ _t('Под ръка е в джоба, и на бюрото, и в колата, и...') }}</p>
+          <p class="md:text-lg">{{ _t('Под ръка в джоба, на бюрото, в колата...') }}</p>
           <p class="md:text-lg">{{ _t('Много е лесно, бързо и ефективно.') }}</p>
 
           <div class="mt-3 md:mt-10">
