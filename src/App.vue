@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import '@splidejs/vue-splide/dist/css/splide-core.min.css';
+import * as styles from '@splidejs/vue-splide/dist/css/splide-core.min.css';
 
 const _t = t => t;
 const inTheBegining = ref();

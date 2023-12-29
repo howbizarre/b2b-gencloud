@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir output --no-source-maps"
+    "build": "parcel build src/index.html --dist-dir output --no-source-maps --public-url ./"
   },
   "devDependencies": {
     "@parcel/transformer-vue": "^2.10.3",
