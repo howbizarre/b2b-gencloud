@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/dist/css/splide-core.min.css';
 
 const _t = t => t;
-const splideRef = ref();
+const inTheBegining = ref();
 
 function scrollToElm(elm) {
   const element = elm.$el;
@@ -40,8 +40,11 @@ function scrollToElm(elm) {
           <p class="md:text-lg">{{ _t('Много е лесно, бързо и ефективно.') }}</p>
 
           <div class="mt-3 md:mt-10">
-            <button @click="scrollToElm(splideRef)" class="bg-blue-700 hover:bg-blue-500 transition-colors text-white font-medium uppercase py-2 px-4 rounded-md">
-              {{ _t('Разгледай') }}
+            <button @click="scrollToElm(inTheBegining)" class="inline-flex justify-between items-center bg-blue-700 hover:bg-blue-500 transition-colors text-white font-medium uppercase py-2 px-4 rounded-md">
+              <span class="ml-2 mr-3">{{ _t('Разгледай') }}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+              </svg>
             </button>
           </div>
         </div>
@@ -52,7 +55,7 @@ function scrollToElm(elm) {
       </div>
     </div>
 
-    <Splide ref="splideRef" :options="{ dragMinThreshold: 10, type: 'loop', arrows: false, pagination: false }" aria-label="My Favorite Images">
+    <Splide ref="inTheBegining" :options="{ dragMinThreshold: 10, type: 'loop', arrows: false, pagination: false }" aria-label="My Favorite Images">
       <SplideSlide class="bg-slate-400">
         <img src="./images//login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
       </SplideSlide>
