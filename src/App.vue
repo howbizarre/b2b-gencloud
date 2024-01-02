@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import * as styles from '@splidejs/vue-splide/dist/css/splide-core.min.css';
 
 const _t = (t) => t;
 const inTheBegining = ref(null);
@@ -12,12 +10,12 @@ const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior:
   <header class="w-full h-14 flex items-center shadow-lg relative z-50">
     <div class="container mx-auto px-5 sm:px-0 flex items-center justify-between">
       <h1 class="flex items-center justify-start text-2xl text-blue-700 leading-5">
-        <img src="./images/gencloud_logo_small.jpg" class="w-auto h-full max-h-7" />
+        <img src="/images/gencloud_logo_small.jpg" class="w-auto h-full max-h-7" />
         <span class="pl-3 font-bold">{{ _t('GenCloud') }}</span>
       </h1>
 
       <h2>
-        <img src="./images/b2b-logo.jpg" class="w-auto h-full max-h-7" />
+        <img src="/images/b2b-logo.jpg" class="w-auto h-full max-h-7" />
       </h2>
     </div>
   </header>
@@ -47,7 +45,7 @@ const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior:
       </div>
 
       <div class="py-8 xl:pr-72 lg:pr-40 md:pr-24 text-center">
-        <img src="./images/login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+        <img src="/images/login-screen.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
       </div>
     </div>
 
@@ -57,17 +55,13 @@ const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior:
               aria-label="This is Bizzio"
               class="rounded-xl">
         <SplideSlide class="rounded-xl bg-slate-300 flex items-center py-10">
-          <img src="./images/gencloud_logo_text.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+          <img src="/images/gencloud_logo_text.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
         </SplideSlide>
 
         <SplideSlide class="rounded-xl bg-slate-500 flex items-center py-10">
-          <img src="./images/gencloud_logo_text.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+          <img src="/images/gencloud_logo_text.png" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
         </SplideSlide>
       </Splide>
     </section>
   </main>
 </template>
-
-<style>
-.welcome { background-image: url('./images/top-section-bg.jpg'); }
-</style>

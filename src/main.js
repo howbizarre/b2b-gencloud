@@ -1,13 +1,10 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue';
+import App from './App.vue';
+import VueSplide from '@splidejs/vue-splide';
 
-globalThis.__VUE_OPTIONS_API__ = true;
-globalThis.__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = true;
-globalThis.__VUE_PROD_DEVTOOLS__ = false;
-
-__VUE_OPTIONS_API__ = true;
-__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = true;
-__VUE_PROD_DEVTOOLS__ = false;
+import './assets/style.css';
+import '@splidejs/vue-splide/css';
 
 const app = createApp(App);
-app.mount("#app");
+      app.use(VueSplide);
+      app.mount('#app');
