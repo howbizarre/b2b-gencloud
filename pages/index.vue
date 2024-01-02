@@ -30,7 +30,11 @@ const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior:
         <div class="w-full h-full flex items-center justify-center mt-3 md:mt-auto">
           <div class="max-w-[90%] md:max-w-full">
             <h3 class="text-3xl lg:text-6xl font-bold mb-3 text-blue-700">
-              <span class="tracking-[-6px] lg:tracking-[-14px] mr-2">{{ _t('B2B') }}</span>
+              <span class="tracking-[-6px] lg:tracking-[-14px] mr-2 relative">
+                <span class="!z-10">{{ _t('B') }}</span>
+                <span class="text-white !z-50">{{ _t('2') }}</span>
+                <span class="!z-10">{{ _t('B') }}</span>
+              </span>
               {{ _t('от GenCloud') }}
             </h3>
 
