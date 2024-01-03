@@ -1,0 +1,10 @@
+{
+  "name": "B2B от GenCloud",
+  "short_name": "b2b",
+  "theme_color": "blue",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/b2b"
+}

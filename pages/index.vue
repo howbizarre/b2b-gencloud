@@ -6,18 +6,23 @@ import '@splidejs/vue-splide/css';
 const _t = (t) => t;
 const inTheBegining = ref(null);
 const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior: 'smooth' });
+
+useHead({
+  "htmlAttrs": { "lang": "bg" },
+  "title": "B2B от GenCloud"
+});
 </script>
 
 <template>
   <div>
-    <header class="w-full h-14 flex items-center shadow-lg relative z-50">
+    <header class="w-full h-14 flex items-center shadow-lg z-50 sticky top-0 bg-white">
       <div class="container mx-auto px-5 sm:px-0 flex items-center justify-between">
         <div class="flex items-center justify-start text-2xl text-blue-700 leading-5 h1">
           <img src="/images/gencloud_logo_small.jpg" alt="GenCloud Logo" class="w-auto h-full max-h-7" />
           <span class="pl-3 font-bold">{{ _t('GenCloud') }}</span>
         </div>
-        
-        <img src="/images/b2b-logo.jpg" alt="B2B Logo" class="w-auto h-full max-h-7" />
+
+        <img src="/images/b2b.png" alt="B2B Logo" class="w-auto h-full max-h-7" />
       </div>
     </header>
 
@@ -48,6 +53,21 @@ const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior:
           <img src="/images/login-screen.png" :alt="_t('Login екран от B2B системата')" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
         </div>
       </div>
+
+      <section class="p-10">
+        <Splide ref="inTheBegining"
+                :options="{ dragMinThreshold: 10, type: 'loop', arrows: false, pagination: false, gap: 10 }"
+                aria-label="This is Bizzio"
+                class="rounded-xl">
+          <SplideSlide class="rounded-xl bg-slate-300/25 flex items-center py-10 h-96 bg-gradient-to-r from-green-100/50 to-blue-200/50">
+            <p>&nbsp;</p>
+          </SplideSlide>
+
+          <SplideSlide class="rounded-xl bg-slate-500/25 flex items-center py-10 h-96 bg-gradient-to-r from-teal-600/50 to-blue-400/50">
+            <p>&nbsp;</p>
+          </SplideSlide>
+        </Splide>
+      </section>
 
       <section class="p-10">
         <Splide ref="inTheBegining"
