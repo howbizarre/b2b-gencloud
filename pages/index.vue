@@ -68,6 +68,10 @@ const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior:
 </template>
 
 <style>
+.welcome {
+  background-image: url('/images/top-section-bg.jpg');
+}
+
 ::selection {
   @apply bg-blue-700 text-white;
 }
