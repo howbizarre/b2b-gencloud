@@ -13,7 +13,7 @@ const scrollToElm = (elm) => {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 welcome bg-cover bg-no-repeat bg-scroll bg-center bg-gradient-to-r from-green-100 to-blue-200">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 bg-[url('/images/top-section-bg.jpg')] bg-cover bg-no-repeat bg-scroll bg-center">
     <div class="w-full h-full flex items-center justify-center mt-3 md:mt-auto">
       <div class="max-w-[90%] md:max-w-full">
         <h1 class="text-3xl lg:text-6xl font-bold mb-3 text-blue-700">

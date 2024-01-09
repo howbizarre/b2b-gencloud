@@ -71,13 +71,11 @@ useHead({
         </Splide>
       </div>
 
-
-
-      <div class="!p-10">
+      <div class="!p-10 bg-gray-200">
         <Splide :options="{ dragMinThreshold: 10, type: 'loop', arrows: false, pagination: true, gap: 20 }"
                 class="rounded-xl">
 
-          <SplideSlide class="grid grid-cols-1 md:grid-cols-2 md:gap-4 rounded-xl py-10 bg-gray-200 items-center justify-center">
+          <SplideSlide class="grid grid-cols-1 md:grid-cols-2 md:gap-4 rounded-xl py-10 bg-white items-center justify-center">
             <div class="px-10">
               <h3 class="text-xl md:text-3xl">{{ _t('Интегрирано с') }} <strong>{{ _t('Bizzio ERP') }}</strong></h3>
 
@@ -98,7 +96,7 @@ useHead({
             </div>
           </SplideSlide>
 
-          <SplideSlide class="grid grid-cols-1 md:grid-cols-2 md:gap-4 rounded-xl py-10 bg-gray-200 items-center justify-center">
+          <SplideSlide class="grid grid-cols-1 md:grid-cols-2 md:gap-4 rounded-xl py-10 bg-white items-center justify-center">
             <div class="px-10">
               <h3 class="text-xl md:text-3xl">{{ _t('Интегрирано с') }} <strong>{{ _t('Bizzio ERP') }}</strong></h3>
 
@@ -153,11 +151,20 @@ useHead({
 </template>
 
 <style>
-.welcome { background-image: url('/images/top-section-bg.jpg'); }
 ::selection { @apply bg-blue-700 text-white; }
+
 .v-enter-active,
-.v-leave-active { transition: opacity 0.5s ease; }
+.v-leave-active { @apply transition-opacity ease-in-out duration-300; }
+
 .v-enter-from,
-.v-leave-to { opacity: 0; }
-.btn { @apply inline-flex justify-between items-center bg-blue-700 hover:bg-blue-500 transition-colors text-white text-sm font-medium uppercase py-2 px-4 rounded-md; }
+.v-leave-to { @apply opacity-0; }
+
+.btn {
+  @apply
+    inline-flex justify-between items-center text-sm font-medium uppercase py-2 px-4 rounded-md
+    bg-blue-700 hover:bg-blue-500 text-white transition-colors;
+}
+
+.splide__pagination__page { @apply bg-gray-500; }
+.splide__pagination__page.is-active { @apply bg-blue-800; }
 </style>
