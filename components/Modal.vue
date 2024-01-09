@@ -11,16 +11,16 @@ const target = ref(null);
     <div class="modal-wrapper">
       <div class="modal-container" ref="target">
         <div class="modal-header">
-          <slot name="header"> default header </slot>
+          <slot name="header" />
         </div>
+
         <div class="modal-body">
-          <slot name="content"> default content </slot>
+          <slot name="content" />
         </div>
-        <div class="modal-footer">
+        
+        <div class="modal-footer flex justify-end">
           <slot name="footer">
-            <div>
-              <button @click.stop="emit('modal-close')">Submit</button>
-            </div>
+            <button @click.stop="emit('modal-close')">{{ _t('Close') }}</button>
           </slot>
         </div>
       </div>
