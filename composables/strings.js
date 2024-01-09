@@ -1,0 +1,1 @@
+export const _t = (t) => t;
