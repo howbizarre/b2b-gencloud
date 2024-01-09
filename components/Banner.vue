@@ -3,9 +3,6 @@ const props = defineProps({
   inTheBegining: Object
 });
 
-console.log('props.inTheBegining', props.inTheBegining);
-
-//const scrollToElm = (elm) => window.scrollTo({ top: elm.$el.offsetTop, behavior: 'smooth' });
 const scrollToElm = (elm) => {
   if (elm && elm.$el) {
     window.scrollTo({ top: elm.$el.offsetTop, behavior: 'smooth' });
