@@ -124,6 +124,7 @@ useHead({
           <template #header>
             <h3 class="text-xl md:text-3xl">{{ _t('Интегрирано с') }} <strong>{{ _t('Bizzio ERP') }}</strong></h3>
           </template>
+          
           <template #content>
             <p class="my-3 text-sm md:text-lg">В2В приложението е част от ERP еко-системата на <strong>GenCloud</strong>.</p>
 
@@ -136,6 +137,7 @@ useHead({
               фактура автоматично се добавя към online поръчката и клиента може да си я свали.
             </p>
           </template>
+
           <template #footer>
             <button @click="closeModal" class="btn">
               <span class="ml-2 mr-3">{{ _t('OK') }}</span>
