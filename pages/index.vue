@@ -44,7 +44,7 @@ useHead({
             </div>
 
             <div class="py-8 pl-8 pr-8 md:pl-0 xl:pr-24 lg:pr-12 md:pr-6">
-              <img src="/images/banners/bizzio-1.png" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
+              <img src="/images/banners/bizzio-1.webp" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
             </div>
           </SplideSlide>
 
@@ -65,7 +65,7 @@ useHead({
             </div>
 
             <div class="py-8 pl-8 pr-8 md:pl-0 xl:pr-24 lg:pr-12 md:pr-6">
-              <img src="/images/banners/bizzio-1.png" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
+              <img src="/images/banners/bizzio-1.webp" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
             </div>
           </SplideSlide>
         </Splide>
@@ -92,7 +92,7 @@ useHead({
             </div>
 
             <div class="py-8 pl-8 pr-8 md:pl-0 xl:pr-24 lg:pr-12 md:pr-6">
-              <img src="/images/banners/bizzio-1.png" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
+              <img src="/images/banners/bizzio-1.webp" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
             </div>
           </SplideSlide>
 
@@ -113,7 +113,7 @@ useHead({
             </div>
 
             <div class="py-8 pl-8 pr-8 md:pl-0 xl:pr-24 lg:pr-12 md:pr-6">
-              <img src="/images/banners/bizzio-1.png" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
+              <img src="/images/banners/bizzio-1.webp" alt="Bizzio ERP" class="w-full h-full shadow-xl shadow-slate-700 rounded-md mx-auto" />
             </div>
           </SplideSlide>
         </Splide>

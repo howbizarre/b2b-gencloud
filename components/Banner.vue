@@ -36,7 +36,7 @@ const scrollToElm = (elm) => {
     </div>
 
     <div class="py-8 xl:pr-72 lg:pr-40 md:pr-24 text-center">
-      <img src="/images/login-screen.png" :alt="_t('Login екран от B2B системата')" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
+      <img src="/images/login-screen.webp" :alt="_t('Login екран от B2B системата')" class="border border-white rounded-xl shadow-lg shadow-gray-600/30 mx-auto max-w-[90%] md:max-w-[100%]" />
     </div>
   </div>
 </template>
